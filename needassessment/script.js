@@ -291,16 +291,24 @@ async function submitAssessment() {
     const scores = appState.formData.scores;
 
     // Generate detailed Q&A summary
-    let questionSummary = '\nDETAILED ANSWERS\n----------------\n';
+    let questionSummary = '\nSELECTED STATEMENTS\n-------------------\n';
 
     ASSESSMENT_MODULES.forEach(module => {
-        questionSummary += `\n[${module.title}]\n`;
+        const selectedQuestions = [];
         module.questions.forEach((q, index) => {
             const qId = `${module.key}-${index}`;
             const checkbox = document.getElementById(qId);
-            const answer = checkbox && checkbox.checked ? 'Yes' : 'No';
-            questionSummary += `- ${q}: ${answer}\n`;
+            if (checkbox && checkbox.checked) {
+                selectedQuestions.push(q);
+            }
         });
+
+        if (selectedQuestions.length > 0) {
+            questionSummary += `\n[${module.title}]\n`;
+            selectedQuestions.forEach(q => {
+                questionSummary += `- ${q}\n`;
+            });
+        }
     });
 
     const body = `

@@ -37,14 +37,6 @@ ASSESSMENT RESULTS
 Total Score: ${totalScore}/30
 Stage: ${stage}
 
-Breakdown:
-1. Clarity: ${scores.clarity}/5
-2. Discovery: ${scores.discovery}/5
-3. Readiness: ${scores.readiness}/5
-4. Market: ${scores.market}/5
-5. Business: ${scores.business}/5
-6. Execution: ${scores.execution}/5
-
 ${questionSummary}
             `.trim(),
         };
