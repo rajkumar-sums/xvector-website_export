@@ -54,7 +54,7 @@ export default async function handler(req, res) {
                 // 1. Send notification to XVector team
                 const teamMailOptions = {
                     from: '"XVector Application" <info@xvector.fi>',
-                    to: 'info@xvector.fi',
+                    to: 'saroj.bhandari@cogknit.io, rajkumar.shrestha@xvector.fi',
                     replyTo: email,
                     subject: `New Cohort Application: ${name}`,
                     text: `
