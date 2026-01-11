@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XVector | Need Assessment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Mermaid JS for diagrams -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        // Force HTTPS in production
+        if (window.location.protocol === 'http:' && window.location.hostname !== 'localhost' && !window.location.hostname.includes('127.0.0.1')) {
+            window.location.href = window.location.href.replace('http:', 'https:');
+        }
+    </script>
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <a href="https://www.xvector.info">
+                <img src="assets/logo.png" alt="XVector Logo" class="logo">
+            </a>
+        </header>
+
+        <main id="main-content">
+            <!-- Views will be injected here -->
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
