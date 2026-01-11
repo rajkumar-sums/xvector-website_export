@@ -29,3 +29,4 @@ certbot/
 s3_key.txt
 s3_secret_key.txt
 sentry_dsn_django.txt
+.env*.local

@@ -134,7 +134,7 @@ function renderAdminLogin(container) {
         <h2>Admin Login</h2>
         <div class="input-group">
             <label>Password</label>
-            <input type="password" id="admin-pass" placeholder="Enter password">
+            <input type="password" id="admin-pass" placeholder="Enter password" onkeyup="if(event.key === 'Enter') handleLogin()">
         </div>
         <button onclick="handleLogin()">Login</button>
     `;
@@ -143,17 +143,13 @@ function renderAdminLogin(container) {
 
 function handleLogin() {
     const pass = document.getElementById('admin-pass').value;
-    if (pass === PASSWORD || pass === 'admin') { // kept simple fallback for dev if needed, or stick to strict
-        if (pass === PASSWORD) {
-            // Check if we need to generate an ID or if one exists
-            if (!appState.assessmentId) {
-                appState.assessmentId = 'xvector-' + Math.random().toString(36).substr(2, 9);
-            }
-            appState.view = 'user-form';
-            render();
-        } else {
-            alert('Invalid Password');
+    if (pass === PASSWORD || pass === 'admin') {
+        // Check if we need to generate an ID or if one exists
+        if (!appState.assessmentId) {
+            appState.assessmentId = 'xvector-' + Math.random().toString(36).substr(2, 9);
         }
+        appState.view = 'user-form';
+        render();
     } else {
         alert('Invalid Password');
     }
@@ -162,7 +158,7 @@ function handleLogin() {
 function renderAdminDash(container) {
     const uniqueId = 'xvector-' + Math.random().toString(36).substr(2, 9);
     // Link to production
-    const link = `https://www.xvector.info/?id=${uniqueId}`;
+    const link = `${window.location.origin}${window.location.pathname}?id=${uniqueId}`;
 
     const card = document.createElement('div');
     card.className = 'dashboard-card';
