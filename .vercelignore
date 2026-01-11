@@ -1,3 +1,8 @@
 node_modules
 .DS_Store
 assets/videos/
+.git
+.git_backup
+.npm-cache
+.vscode
+.history
