@@ -1,5 +1,5 @@
 const appState = {
-    view: 'loading', // loading, admin-login, admin-dash, user-form, user-result
+    view: 'loading', // loading, user-form, user-result
     formData: {
         teamName: '',
         email: '',
@@ -19,7 +19,6 @@ const appState = {
     assessmentId: null
 };
 
-const PASSWORD = '#XVector@2026';
 
 // Detailed Questions Configuration
 const ASSESSMENT_MODULES = [
@@ -97,15 +96,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function init() {
     const urlParams = new URLSearchParams(window.location.search);
-    const assessmentId = urlParams.get('id');
+    let assessmentId = urlParams.get('id');
+
+    // Default to user form view
+    appState.view = 'user-form';
 
     if (assessmentId) {
-        // Shared link view
         appState.assessmentId = assessmentId;
-        appState.view = 'user-form';
     } else {
-        // Admin view (default)
-        appState.view = 'admin-login';
+        // Generate a fallback assessment ID if missing
+        appState.assessmentId = 'xvector-' + Math.random().toString(36).substr(2, 9);
     }
 
     render();
@@ -116,70 +116,13 @@ function render() {
     main.innerHTML = '';
     window.scrollTo(0, 0);
 
-    if (appState.view === 'admin-login') {
-        renderAdminLogin(main);
-    } else if (appState.view === 'admin-dash') {
-        renderAdminDash(main);
-    } else if (appState.view === 'user-form') {
+    if (appState.view === 'user-form') {
         renderUserForm(main);
     } else if (appState.view === 'user-result') {
         renderUserResult(main);
     }
 }
 
-function renderAdminLogin(container) {
-    const card = document.createElement('div');
-    card.className = 'auth-card';
-    card.innerHTML = `
-        <h2>Admin Login</h2>
-        <div class="input-group">
-            <label>Password</label>
-            <input type="password" id="admin-pass" placeholder="Enter password" onkeyup="if(event.key === 'Enter') handleLogin()">
-        </div>
-        <button onclick="handleLogin()">Login</button>
-    `;
-    container.appendChild(card);
-}
-
-function handleLogin() {
-    const pass = document.getElementById('admin-pass').value;
-    if (pass === PASSWORD || pass === 'admin') {
-        // Check if we need to generate an ID or if one exists
-        if (!appState.assessmentId) {
-            appState.assessmentId = 'xvector-' + Math.random().toString(36).substr(2, 9);
-        }
-        appState.view = 'user-form';
-        render();
-    } else {
-        alert('Invalid Password');
-    }
-}
-
-function renderAdminDash(container) {
-    const uniqueId = 'xvector-' + Math.random().toString(36).substr(2, 9);
-    // Link to production
-    const link = `${window.location.origin}${window.location.pathname}?id=${uniqueId}`;
-
-    const card = document.createElement('div');
-    card.className = 'dashboard-card';
-    card.innerHTML = `
-        <h2>Create Assessment Link</h2>
-        <p>Share this link with teams to start their need assessment.</p>
-        <div class="share-link-box">
-            <input type="text" value="${link}" readonly id="share-link">
-            <button onclick="copyLink()" style="width: auto;">Copy</button>
-        </div>
-        <button onclick="window.open('${link}', '_blank')" class="secondary">Open Link Preview</button>
-    `;
-    container.appendChild(card);
-}
-
-function copyLink() {
-    const copyText = document.getElementById("share-link");
-    copyText.select();
-    document.execCommand("copy");
-    alert("Link copied to clipboard!");
-}
 
 function renderUserForm(container) {
     const card = document.createElement('div');
