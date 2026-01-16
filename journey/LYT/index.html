@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LYT | Startup Journey</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Navigation Bar - XVector Style -->
+        <nav class="navbar glass-panel">
+            <div class="container nav-container">
+                <a href="/" class="logo">
+                    <img src="logo.png" alt="LYT Logo" class="logo-img">
+                </a>
+
+                <!-- Pipeline Progress (Center) -->
+                <div class="pipeline-nav">
+                    <div class="pipeline-step passed"
+                        data-tooltip="Idea validation, team formation, and initial concepting">Ignition</div>
+                    <div class="pipeline-connector"></div>
+                    <div class="pipeline-step passed"
+                        data-tooltip="MVP build, first product release, and early user testing">Launchpad</div>
+                    <div class="pipeline-connector"></div>
+                    <div class="pipeline-step active"
+                        data-tooltip="Market validation, unit economics, and proving the business model">Testbed</div>
+                    <div class="pipeline-connector future"></div>
+                    <div class="pipeline-step future"
+                        data-tooltip="Aggressive growth, scaling operations, and series A readiness">LiftOff</div>
+                    <div class="pipeline-connector future"></div>
+                    <div class="pipeline-step future"
+                        data-tooltip="International expansion and global market domination">Orbit</div>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Main Journey Interface -->
+        <main class="journey-container">
+            <header class="journey-header">
+                <h1 class="giant-brand">LYT</h1>
+                <p class="subtitle">From Reality Check to Liftoff</p>
+            </header>
+
+            <div class="timeline-track">
+                <!-- Node 1: Need Analysis -->
+                <div class="journey-node" data-id="need-analysis">
+                    <div class="node-marker">01</div>
+                    <div class="node-content glass-panel">
+                        <h3>Need Analysis</h3>
+                        <p>Reality Check & Market Fit</p>
+                        <span class="node-link">Explore Analysis →</span>
+                    </div>
+                </div>
+
+                <!-- Node 2: Positioning -->
+                <div class="journey-node" data-id="positioning">
+                    <div class="node-marker">02</div>
+                    <div class="node-content glass-panel">
+                        <h3>Stage Positioning</h3>
+                        <p>Current Status: TESTBED</p>
+                        <span class="node-link">View Assessment →</span>
+                    </div>
+                </div>
+
+                <!-- Node 3: Risks -->
+                <div class="journey-node" data-id="risks">
+                    <div class="node-marker">03</div>
+                    <div class="node-content glass-panel">
+                        <h3>Risk Analysis</h3>
+                        <p>Critical, Operational & Financial</p>
+                        <span class="node-link">View Risks →</span>
+                    </div>
+                </div>
+
+                <!-- Node 4: Roadmap -->
+                <div class="journey-node" data-id="roadmap">
+                    <div class="node-marker">04</div>
+                    <div class="node-content glass-panel">
+                        <h3>Linear Journey</h3>
+                        <p>4 Checkpoints to TESTBED Success</p>
+                        <span class="node-link">Open Lifecycle →</span>
+                    </div>
+                </div>
+
+                <!-- Node 5: Service View -->
+                <div class="journey-node" data-id="service-view">
+                    <div class="node-marker">05</div>
+                    <div class="node-content glass-panel">
+                        <h3>Service View</h3>
+                        <p>End-to-End Customer Flow</p>
+                        <span class="node-link">View Blueprint →</span>
+                    </div>
+                </div>
+
+                <!-- Node 6: Final Truth -->
+                <div class="journey-node" data-id="final-truth">
+                    <div class="node-marker">06</div>
+                    <div class="node-content glass-panel">
+                        <h3>Final Truth</h3>
+                        <p>Founder-to-Founder</p>
+                        <span class="node-link">Read Note →</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Side Drawer (Right to Left Animation) -->
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <aside id="info-drawer" class="side-drawer">
+        <!-- Lock Overlay -->
+        <div id="lock-overlay" class="lock-overlay">
+            <div class="lock-box">
+                <h2 class="brand-lyt">LYT</h2>
+                <p class="lock-msg">Restricted Access</p>
+                <div class="password-group">
+                    <input type="password" id="password-input" class="glass-input" placeholder="••••••••">
+                </div>
+                <button id="unlock-btn" class="unlock-btn">Unlock Journey</button>
+            </div>
+        </div>
+
+        <div class="drawer-header">
+            <button id="drawer-close" class="drawer-close-btn">&times;</button>
+        </div>
+        <div class="drawer-content" id="drawer-content">
+            <!-- Content will be injected here -->
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
