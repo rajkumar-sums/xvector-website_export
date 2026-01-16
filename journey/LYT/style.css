@@ -1434,92 +1434,20 @@ h4 {
 /* Fix Lock Bug - Ensure restricted content stays blurred while scrolling */
 
 /* Locked drawer - keep restricted content blurred */
+/* CSS removed to fix persistent blur issue */
+/* The user explicitly requested NO BLUR on locked content */
+
+/* Ensure restricted content is always visible and clear */
 .side-drawer.locked .restricted-content {
-    filter: blur(18px) !important;
-    pointer-events: none !important;
-    user-select: none !important;
-    opacity: 0.4 !important;
-    transition: none;
-}
-
-/* Prevent any visibility when locked */
-.side-drawer.locked .restricted-content * {
-    pointer-events: none !important;
-    user-select: none !important;
-}
-
-/* Lock overlay positioning - ensure it stays on top */
-.side-drawer.locked .lock-overlay {
-    position: fixed !important;
-    z-index: 150 !important;
-}
-
-/* Ensure drawer content is behind lock when locked */
-.side-drawer.locked .drawer-content {
-    z-index: 1;
-}
-
-/* When unlocked, make everything clear */
-.side-drawer:not(.locked) .restricted-content {
     filter: none !important;
     opacity: 1 !important;
     pointer-events: auto !important;
     user-select: auto !important;
 }
 
-/* Proper Lock Fix - Prevent scrolling and hide content when locked */
-
-/* Prevent drawer from scrolling when locked */
-.side-drawer.locked {
-    overflow: hidden !important;
-}
-
-/* Lock overlay should cover entire drawer area */
-.side-drawer.locked .lock-overlay {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 30%, #000 60%) !important;
-    backdrop-filter: none !important;
-    z-index: 150 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 0 !important;
-}
-
-/* Completely hide restricted content when locked */
-.side-drawer.locked .restricted-content {
-    /* Removed display: none !important; based on user request to not blur/hide */
-    filter: none !important;
-    opacity: 1 !important;
-}
-
-/* Lock box positioning */
-.side-drawer.locked .lock-box {
-    pointer-events: auto !important;
-    margin-top: 100px;
-}
-
-/* Blur the drawer content background when locked */
 .side-drawer.locked .drawer-content {
-    filter: blur(10px);
-    overflow: hidden;
-}
-
-/* When unlocked, restore everything */
-.side-drawer:not(.locked) {
+    filter: none !important;
     overflow-y: auto !important;
-}
-
-.side-drawer:not(.locked) .restricted-content {
-    display: block !important;
-}
-
-.side-drawer:not(.locked) .drawer-content {
-    filter: none;
 }
 
 /* =========================================
