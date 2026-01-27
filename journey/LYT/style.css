@@ -918,18 +918,7 @@ h4 {
     font-weight: 800;
 }
 
-.pipeline-step.active::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 12px;
-    right: 24px;
-    /* Account for the line margin */
-    height: 2px;
-    background: var(--color-primary);
-    box-shadow: 0 0 10px var(--color-primary);
-    animation: pulse-line 2s infinite;
-}
+/* Neon pulse removed */
 
 /* Passed Phases */
 .pipeline-step.passed {
@@ -947,46 +936,7 @@ h4 {
 }
 
 /* Hover Tooltip */
-.pipeline-tooltip {
-    position: absolute;
-    top: 40px;
-    /* Below the nav */
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(10, 10, 10, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 12px 16px;
-    border-radius: 8px;
-    width: 220px;
-    pointer-events: none;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.2s;
-    z-index: 200;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-}
-
-.pipeline-step:hover .pipeline-tooltip {
-    opacity: 1;
-    visibility: visible;
-    top: 50px;
-}
-
-.tooltip-title {
-    color: var(--color-primary);
-    font-size: 12px;
-    margin-bottom: 4px;
-    display: block;
-    font-weight: 700;
-}
-
-.tooltip-desc {
-    color: #ccc;
-    font-size: 11px;
-    line-height: 1.4;
-}
+/* Tooltips removed */
 
 @keyframes pulse-line {
     0% {
@@ -1100,7 +1050,7 @@ h4 {
     height: 2px;
     background: var(--color-primary);
     box-shadow: 0 0 8px var(--color-primary);
-    animation: pulse-glow 2s ease-in-out infinite;
+    /* animation: pulse-glow 2s ease-in-out infinite; */
 }
 
 .pipeline-step.future {
@@ -1242,7 +1192,7 @@ h4 {
     height: 2px;
     background: var(--color-primary);
     box-shadow: 0 0 8px var(--color-primary);
-    animation: pulse-glow 2s ease-in-out infinite;
+    /* animation: pulse-glow 2s ease-in-out infinite; */
 }
 
 /* Upcoming phases - Slight Grey */
@@ -1308,35 +1258,7 @@ h4 {
     cursor: help;
 }
 
-/* Tooltip on hover */
-.pipeline-step::before {
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%) translateY(10px);
-    background: rgba(0, 0, 0, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 8px 12px;
-    border-radius: 6px;
-    font-size: 10px;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.2s;
-    pointer-events: none;
-    color: #ccc;
-    font-weight: 400;
-    text-transform: none;
-    letter-spacing: 0;
-    z-index: 1000;
-}
-
-.pipeline-step:hover::before {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(-50%) translateY(0);
-}
+/* Tooltip styles removed */
 
 /* Completed phases - Clean White */
 .pipeline-step.passed {
@@ -1359,7 +1281,7 @@ h4 {
     height: 2px;
     background: var(--color-primary);
     box-shadow: 0 0 8px var(--color-primary);
-    animation: pulse-glow 2s ease-in-out infinite;
+    /* animation: pulse-glow 2s ease-in-out infinite; */
 }
 
 /* Upcoming phases - Slight Grey */
@@ -1391,40 +1313,7 @@ h4 {
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Better tooltip styling */
-.pipeline-step::before {
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: -50px;
-    left: 50%;
-    transform: translateX(-50%) translateY(10px);
-    background: rgba(10, 10, 10, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 10px 14px;
-    border-radius: 8px;
-    font-size: 10px;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s;
-    pointer-events: none;
-    color: #fff;
-    font-weight: 400;
-    text-transform: none;
-    letter-spacing: 0;
-    z-index: 1000;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-    max-width: 250px;
-    white-space: normal;
-    text-align: center;
-    line-height: 1.4;
-}
-
-.pipeline-step:hover::before {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(-50%) translateY(0);
-}
+/* Better tooltip styling removed */
 
 /* Adjust main content padding for navbar with gap */
 .journey-container {
