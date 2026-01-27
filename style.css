@@ -628,6 +628,20 @@ section {
     /* Fallback */
 }
 
+.finnofest-image:hover {
+    background-image: url('assets/finnofest.jpg');
+    background-color: #1a1a1a;
+    transform: none;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--glass-border);
+}
+
+/* Remove the glass-card pseudo-element hover effect for this specific item if needed */
+.finnofest-image:hover::before {
+    left: -50%;
+    transition: none;
+}
+
 /* --- Mobile --- */
 /* --- Mobile Navigation & Hamburger --- */
 .mobile-menu-btn {
