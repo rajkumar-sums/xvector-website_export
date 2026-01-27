@@ -624,23 +624,15 @@ section {
     background-repeat: no-repeat;
     opacity: 0.9;
     border-radius: 24px;
+    /* Decoupled from .glass-card basics */
     background-color: #1a1a1a;
-    /* Fallback */
-}
-
-.finnofest-image:hover {
-    background-image: url('assets/finnofest.jpg');
-    background-color: #1a1a1a;
-    transform: none;
+    border: 1px solid var(--glass-border);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border-color: var(--glass-border);
+    position: relative;
+    overflow: hidden;
 }
 
-/* Remove the glass-card pseudo-element hover effect for this specific item if needed */
-.finnofest-image:hover::before {
-    left: -50%;
-    transition: none;
-}
+/* Hover effect removed entirely for finnofest-image */
 
 /* --- Mobile --- */
 /* --- Mobile Navigation & Hamburger --- */
