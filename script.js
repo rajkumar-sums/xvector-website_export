@@ -431,3 +431,25 @@ class Star {
 document.addEventListener('DOMContentLoaded', () => {
     new WarpAnimation();
 });
+
+/* --- Mobile Menu Toggle --- */
+function toggleMobileMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+
+    // Only toggle if elements exist (mobile view check via CSS display property isn't strictly necessary if logic is sound, but good for safety)
+    if (navLinks && menuBtn) {
+        // We only want to toggle if the button is actually visible (mobile mode)
+        // OR simpler: just toggle classes. CSS handles whether .active effects are visible.
+        navLinks.classList.toggle('active');
+        menuBtn.classList.toggle('active');
+
+        // Prevent background scrolling when menu is open
+        if (navLinks.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    }
+}
+
