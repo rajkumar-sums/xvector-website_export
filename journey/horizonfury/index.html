@@ -2,171 +2,254 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y32M6ZZXFX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-Y32M6ZZXFX');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horizon Fury | Startup Journey</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/png" href="/assets/logo.png">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;900&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="/journey/horizonfury/style.css">
-
-    <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="Horizon Fury by XVector - Urjaghar's smart energy control journey from idea to market success.">
-    <link rel="canonical" href="https://www.xvector.fi/journey/horizonfury/">
-
-    <!-- Open Graph for Social Sharing -->
-    <meta property="og:title" content="Horizon Fury | Startup Journey">
-    <meta property="og:description"
-        content="Horizon Fury by XVector - Urjaghar's smart energy control journey from idea to market success.">
-    <meta property="og:url" content="https://www.xvector.fi/journey/horizonfury/">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Horizon Fury | Startup Journey">
-    <meta name="twitter:description" content="Horizon Fury by XVector - Urjaghar's smart energy control journey.">
+    <meta name="description" content="Urjaghar startup journey - from Launchpad to market success">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <div id="app">
-        <!-- Navigation Bar - XVector Style -->
-        <nav class="navbar glass-panel">
-            <div class="container nav-container">
-                <a href="/" class="logo">
-                    <img src="/journey/horizonfury/logo.png" alt="XVector Logo" class="logo-img">
-                </a>
-
-                <!-- Pipeline Progress (Center) -->
-                <div class="pipeline-nav">
-                    <div class="pipeline-step passed">Ignition</div>
-                    <div class="pipeline-connector"></div>
-                    <div class="pipeline-step active">Launchpad</div>
-                    <div class="pipeline-connector future"></div>
-                    <div class="pipeline-step future">Testbed</div>
-                    <div class="pipeline-connector future"></div>
-                    <div class="pipeline-step future">LiftOff</div>
-                    <div class="pipeline-connector future"></div>
-                    <div class="pipeline-step future">Orbit</div>
-                </div>
-
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-logo" onclick="window.location.href='/'">
+                <img src="./logo.png" alt="Horizon Fury Logo" style="height: 40px; width: auto;">
             </div>
-        </nav>
 
-        <!-- Main Journey Interface -->
-        <main class="journey-container">
-            <header class="journey-header">
-                <h1 class="giant-brand">HORIZON FURY</h1>
-                <p class="subtitle">Urjaghar: Smart Energy Control Journey</p>
-            </header>
-
-            <div class="timeline-track">
-                <!-- Node 1: Need Analysis -->
-                <div class="journey-node" data-id="need-analysis">
-                    <div class="node-marker">01</div>
-                    <div class="node-content glass-panel">
-                        <h3>Problem Validation</h3>
-                        <p>Reality Check & Market Fit</p>
-                        <span class="node-link">Explore Assessment →</span>
-                    </div>
+            <div class="pipeline-stages">
+                <div class="stage" data-stage="ignition">
+                    <span class="stage-name">Ignition</span>
                 </div>
-
-                <!-- Node 2: Positioning -->
-                <div class="journey-node" data-id="positioning">
-                    <div class="node-marker">02</div>
-                    <div class="node-content glass-panel">
-                        <h3>Stage Positioning</h3>
-                        <p>Current Status: LAUNCHPAD (13/30)</p>
-                        <span class="node-link">View Assessment →</span>
-                    </div>
+                <div class="stage active" data-stage="launchpad">
+                    <span class="stage-name">Launchpad</span>
                 </div>
-
-                <!-- Node 3: Risks -->
-                <div class="journey-node" data-id="risks">
-                    <div class="node-marker">03</div>
-                    <div class="node-content glass-panel">
-                        <h3>Risk Analysis</h3>
-                        <p>Hardware, Reliability & Trust</p>
-                        <span class="node-link">View Risks →</span>
-                    </div>
+                <div class="stage" data-stage="testbed">
+                    <span class="stage-name">Testbed</span>
                 </div>
-
-                <!-- Node 4: Roadmap -->
-                <div class="journey-node" data-id="roadmap">
-                    <div class="node-marker">04</div>
-                    <div class="node-content glass-panel">
-                        <h3>Linear Journey</h3>
-                        <p>5 Checkpoints to LIFT-OFF Success</p>
-                        <span class="node-link">Open Lifecycle →</span>
-                    </div>
+                <div class="stage" data-stage="liftoff">
+                    <span class="stage-name">LiftOff</span>
                 </div>
-
-                <!-- Node 5: Comparison -->
-                <div class="journey-node" data-id="comparison">
-                    <div class="node-marker">05</div>
-                    <div class="node-content glass-panel">
-                        <h3>Urjaghar vs LYT</h3>
-                        <p>Hardware vs Software startup</p>
-                        <span class="node-link">View Comparison →</span>
-                    </div>
-                </div>
-
-                <!-- Node 6: Final Truth -->
-                <div class="journey-node" data-id="final-truth">
-                    <div class="node-marker">06</div>
-                    <div class="node-content glass-panel">
-                        <h3>Final Truth</h3>
-                        <p>The Hardware Reality</p>
-                        <span class="node-link">Read Note →</span>
-                    </div>
+                <div class="stage" data-stage="orbit">
+                    <span class="stage-name">Orbit</span>
                 </div>
             </div>
-        </main>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-badge">Hardware + Energy + Behavior Change</div>
+        <h1 class="hero-title">Horizon Fury</h1>
+        <p class="hero-subtitle">Urjaghar: Smart Energy Control Journey</p>
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-value">Launchpad</div>
+                <div class="stat-label">Current Stage</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">13/30</div>
+                <div class="stat-label">Assessment Score</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">4</div>
+                <div class="stat-label">Team Size</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Journey Timeline -->
+    <main class="journey-container">
+        <div class="journey-timeline">
+            <!-- Checkpoint 1 -->
+            <div class="checkpoint" data-checkpoint="1">
+                <div class="checkpoint-marker">
+                    <div class="marker-number">01</div>
+                </div>
+                <div class="checkpoint-card" onclick="toggleCheckpoint(1)">
+                    <div class="card-header">
+                        <div class="card-stage-badge">Launchpad</div>
+                        <h3 class="card-title">Problem Validation</h3>
+                        <p class="card-subtitle">Ground Truth Discovery</p>
+                    </div>
+                    <div class="card-objective">
+                        <strong>Objective:</strong> Confirm people care enough to change behavior
+                    </div>
+                    <div class="card-content" id="checkpoint-1-content">
+                        <p class="content-intro">Users must acknowledge waste <strong>and</strong> show interest in
+                            automation</p>
+                    </div>
+                    <button class="card-action">
+                        <span>Explore Checkpoint</span>
+                        <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Checkpoint 2 -->
+            <div class="checkpoint locked" data-checkpoint="2">
+                <div class="checkpoint-marker">
+                    <div class="marker-number">
+                        <svg class="lock-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M7 11V7C7 4.79086 8.79086 3 11 3H13C15.2091 3 17 4.79086 17 7V11"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="checkpoint-card" onclick="toggleCheckpoint(2)">
+                    <div class="card-header">
+                        <div class="card-stage-badge locked-badge">🔒 Late Launchpad</div>
+                        <h3 class="card-title">Solution Definition</h3>
+                        <p class="card-subtitle">MVP Design</p>
+                    </div>
+                    <div class="card-objective">
+                        <strong>Objective:</strong> Convert idea into a testable product
+                    </div>
+                    <div class="card-content" id="checkpoint-2-content">
+                        <p class="content-intro">Explain the system <strong>simply to a non-tech parent</strong></p>
+                    </div>
+                    <button class="card-action">
+                        <span>Explore Checkpoint</span>
+                        <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Checkpoint 3 -->
+            <div class="checkpoint locked" data-checkpoint="3">
+                <div class="checkpoint-marker">
+                    <div class="marker-number">
+                        <svg class="lock-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M7 11V7C7 4.79086 8.79086 3 11 3H13C15.2091 3 17 4.79086 17 7V11"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="checkpoint-card" onclick="toggleCheckpoint(3)">
+                    <div class="card-header">
+                        <div class="card-stage-badge locked-badge">🔒 Early Testbed</div>
+                        <h3 class="card-title">Prototype & Safety Test</h3>
+                        <p class="card-subtitle">Controlled Home Pilots</p>
+                    </div>
+                    <div class="card-objective">
+                        <strong>Objective:</strong> Make it work in 3–5 real homes
+                    </div>
+                    <div class="card-content" id="checkpoint-3-content">
+                        <p class="content-intro">Zero safety incidents & high user tolerance required</p>
+                    </div>
+                    <button class="card-action">
+                        <span>Explore Checkpoint</span>
+                        <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Checkpoint 4 -->
+            <div class="checkpoint locked" data-checkpoint="4">
+                <div class="checkpoint-marker">
+                    <div class="marker-number">
+                        <svg class="lock-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M7 11V7C7 4.79086 8.79086 3 11 3H13C15.2091 3 17 4.79086 17 7V11"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="checkpoint-card" onclick="toggleCheckpoint(4)">
+                    <div class="card-header">
+                        <div class="card-stage-badge locked-badge">🔒 Testbed</div>
+                        <h3 class="card-title">Value & Pricing Validation</h3>
+                        <p class="card-subtitle">Economics Reality</p>
+                    </div>
+                    <div class="card-objective">
+                        <strong>Objective:</strong> See if savings justify price
+                    </div>
+                    <div class="card-content" id="checkpoint-4-content">
+                        <p class="content-intro">Payback ≤ 18–24 months must feel acceptable</p>
+                    </div>
+                    <button class="card-action">
+                        <span>Explore Checkpoint</span>
+                        <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Checkpoint 5 -->
+            <div class="checkpoint locked" data-checkpoint="5">
+                <div class="checkpoint-marker">
+                    <div class="marker-number">
+                        <svg class="lock-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M7 11V7C7 4.79086 8.79086 3 11 3H13C15.2091 3 17 4.79086 17 7V11"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="checkpoint-card" onclick="toggleCheckpoint(5)">
+                    <div class="card-header">
+                        <div class="card-stage-badge locked-badge">🔒 LiftOff</div>
+                        <h3 class="card-title">Trust & Scale Readiness</h3>
+                        <p class="card-subtitle">Scale Foundations</p>
+                    </div>
+                    <div class="card-objective">
+                        <strong>Objective:</strong> Prepare for wider residential rollout
+                    </div>
+                    <div class="card-content" id="checkpoint-5-content">
+                        <p class="content-intro">Build trust through safety certification & warranty clarity</p>
+                    </div>
+                    <button class="card-action">
+                        <span>Explore Checkpoint</span>
+                        <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Password Modal -->
+    <div class="password-modal-overlay" id="passwordModalOverlay"></div>
+    <div class="password-modal" id="passwordModal">
+        <div class="password-modal-content">
+            <h3 class="password-modal-title">🔒 Unlock Checkpoint</h3>
+            <p class="password-modal-subtitle">Enter password to access checkpoint <span
+                    id="unlockCheckpointNumber"></span></p>
+            <input type="password" id="passwordInput" class="password-input" placeholder="Enter password"
+                autocomplete="off" />
+            <div class="password-error" id="passwordError">Incorrect password. Try again.</div>
+            <div class="password-modal-actions">
+                <button class="btn-cancel" onclick="closePasswordModal()">Cancel</button>
+                <button class="btn-unlock" onclick="checkPassword()">Unlock</button>
+            </div>
+        </div>
     </div>
 
-    <!-- Side Drawer (Right to Left Animation) -->
-    <div class="drawer-overlay" id="drawer-overlay"></div>
-    <aside id="info-drawer" class="side-drawer">
-        <!-- Lock Overlay -->
-        <div id="lock-overlay" class="lock-overlay">
-            <div class="lock-box">
-                <h2 class="brand-lyt"
-                    style="background: linear-gradient(135deg, #00ff88 0%, #00d9ff 100%); -webkit-background-clip: text; background-clip: text;">
-                    HORIZON</h2>
-                <p class="lock-msg">Restricted Access</p>
-                <div class="password-group">
-                    <input type="password" id="password-input" class="glass-input" placeholder="••••••••">
-                </div>
-                <button id="unlock-btn" class="unlock-btn"
-                    style="background: linear-gradient(135deg, #00ff88 0%, #00d9ff 100%); color: #000;">Unlock
-                    Journey</button>
-            </div>
+    <!-- Side Drawer -->
+    <div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer()"></div>
+    <div class="drawer" id="drawer">
+        <button class="drawer-close" onclick="closeDrawer()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </button>
+        <div class="drawer-content" id="drawerContent">
+            <!-- Dynamic content will be loaded here -->
         </div>
+    </div>
 
-        <div class="drawer-header">
-            <button id="drawer-close" class="drawer-close-btn">&times;</button>
-        </div>
-        <div class="drawer-content" id="drawer-content">
-            <!-- Content will be injected here -->
-        </div>
-    </aside>
-
-    <script src="/journey/horizonfury/script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
