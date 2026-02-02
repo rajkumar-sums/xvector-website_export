@@ -10,26 +10,25 @@
 :root {
     /* Energy-themed colors - CALIBRATED TO LOGO (#ccff00) */
     --energy-green: #ccff00;
-    --energy-cyan: #00ffcc;
-    --energy-blue: #0099ff;
+    --energy-blue: #60a5fa;
     --warning-orange: #ff9500;
     --critical-red: #ff3b30;
 
     /* Dark theme */
-    --bg-primary: #0a0e14;
-    --bg-secondary: #0f1419;
-    --bg-card: rgba(20, 25, 35, 0.6);
-    --bg-card-hover: rgba(25, 32, 45, 0.8);
+    --bg-primary: #08080a;
+    --bg-secondary: #121214;
+    --bg-card: rgba(18, 18, 20, 0.6);
+    --bg-card-hover: rgba(24, 24, 28, 0.8);
 
     /* Text */
     --text-primary: #ffffff;
-    --text-secondary: #a0aec0;
+    --text-secondary: #b0b0b5;
     --text-muted: #718096;
 
     /* Borders & glows */
     --border-color: rgba(255, 255, 255, 0.1);
-    --glow-energy: 0 0 20px rgba(204, 255, 0, 0.3);
-    --glow-cyan: 0 0 20px rgba(0, 255, 204, 0.3);
+    --glow-energy: 0 0 20px rgba(204, 255, 0, 0.2);
+    --glow-blue: 0 0 20px rgba(96, 165, 250, 0.2);
 
     /* Spacing */
     --spacing-xs: 0.5rem;
@@ -137,7 +136,7 @@ body::before {
 }
 
 .stage.active {
-    background: linear-gradient(135deg, var(--energy-green), var(--energy-cyan));
+    background: linear-gradient(135deg, var(--energy-green), var(--energy-blue));
     border-color: var(--energy-green);
     box-shadow: var(--glow-energy);
 }
@@ -168,7 +167,7 @@ body::before {
 .hero-badge {
     display: inline-block;
     padding: 0.5rem 1.25rem;
-    background: linear-gradient(135deg, rgba(204, 255, 0, 0.1), rgba(0, 255, 204, 0.1));
+    background: linear-gradient(135deg, rgba(204, 255, 0, 0.1), rgba(96, 165, 250, 0.1));
     border: 1px solid var(--energy-green);
     border-radius: 30px;
     font-size: 0.875rem;
@@ -194,7 +193,7 @@ body::before {
     font-family: var(--font-display);
     font-size: clamp(3rem, 8vw, 5rem);
     font-weight: 700;
-    background: linear-gradient(135deg, var(--energy-green), var(--energy-cyan));
+    background: linear-gradient(135deg, var(--energy-green), var(--energy-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -235,7 +234,7 @@ body::before {
 .stat-value {
     font-size: 2rem;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--energy-green), var(--energy-cyan));
+    background: linear-gradient(135deg, var(--energy-green), var(--energy-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -274,7 +273,6 @@ body::before {
     width: 2px;
     background: linear-gradient(to bottom,
             var(--energy-green),
-            var(--energy-cyan),
             var(--energy-blue));
     opacity: 0.3;
 }
@@ -298,7 +296,7 @@ body::before {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--energy-green), var(--energy-cyan));
+    background: linear-gradient(135deg, var(--energy-green), var(--energy-blue));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -367,8 +365,8 @@ body::before {
 
 .card-objective {
     padding: var(--spacing-sm);
-    background: rgba(0, 255, 204, 0.1);
-    border-left: 3px solid var(--energy-cyan);
+    background: rgba(96, 165, 250, 0.1);
+    border-left: 3px solid var(--energy-blue);
     border-radius: 8px;
     margin-bottom: var(--spacing-md);
     font-size: 0.9rem;
@@ -394,7 +392,7 @@ body::before {
     align-items: center;
     gap: 0.5rem;
     padding: 0.75rem 1.5rem;
-    background: linear-gradient(135deg, var(--energy-green), var(--energy-cyan));
+    background: linear-gradient(135deg, var(--energy-green), var(--energy-blue));
     border: none;
     border-radius: 12px;
     color: var(--bg-primary);
@@ -496,7 +494,7 @@ body::before {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: var(--spacing-sm);
-    background: linear-gradient(135deg, var(--energy-green), var(--energy-cyan));
+    background: linear-gradient(135deg, var(--energy-green), var(--energy-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -537,7 +535,7 @@ body::before {
     padding: var(--spacing-sm);
     margin-bottom: var(--spacing-sm);
     background: rgba(255, 255, 255, 0.03);
-    border-left: 3px solid var(--energy-cyan);
+    border-left: 3px solid var(--energy-blue);
     border-radius: 6px;
     color: var(--text-secondary);
 }
@@ -560,7 +558,7 @@ body::before {
 
 .success-criteria {
     padding: var(--spacing-md);
-    background: linear-gradient(135deg, rgba(204, 255, 0, 0.1), rgba(0, 255, 204, 0.1));
+    background: linear-gradient(135deg, rgba(204, 255, 0, 0.1), rgba(96, 165, 250, 0.1));
     border: 2px solid var(--energy-green);
     border-radius: 12px;
     margin-top: var(--spacing-lg);
@@ -678,7 +676,7 @@ body::before {
 .password-modal-title {
     font-size: 1.75rem;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--energy-green), var(--energy-cyan));
+    background: linear-gradient(135deg, var(--energy-green), var(--energy-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -765,7 +763,7 @@ body::before {
 }
 
 .btn-unlock {
-    background: linear-gradient(135deg, var(--energy-green), var(--energy-cyan));
+    background: linear-gradient(135deg, var(--energy-green), var(--energy-blue));
     color: var(--bg-primary);
 }
 
