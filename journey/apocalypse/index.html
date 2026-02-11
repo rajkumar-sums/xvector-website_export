@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apocalypse | Startup Journey</title>
+    <meta name="description" content="Apocalypse Startup Journey - Seed Waste to Natural Dye Colours">
+    <link rel="stylesheet" href="/journey/apocalypse/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-logo">
+                <svg width="45" height="45" viewBox="0 0 100 100" fill="none">
+                    <!-- Leaf/Drop Integration Logo -->
+                    <path
+                        d="M50 20C50 20 80 40 80 70C80 86.5685 66.5685 100 50 100C33.4315 100 20 86.5685 20 70C20 40 50 20 50 20Z"
+                        fill="url(#energyGradient)" />
+                    <path d="M50 20L50 90" stroke="rgba(0,0,0,0.2)" stroke-width="4" stroke-linecap="round" />
+                    <defs>
+                        <linearGradient id="energyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#ccff00;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#e5ff00;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="pipeline-stages">
+                <div class="stage active" data-stage="ignition">
+                    <span class="stage-name">Ignition</span>
+                </div>
+                <div class="stage" data-stage="launchpad">
+                    <span class="stage-name">Launchpad</span>
+                </div>
+                <div class="stage" data-stage="testbed">
+                    <span class="stage-name">Testbed</span>
+                </div>
+                <div class="stage" data-stage="liftoff">
+                    <span class="stage-name">LiftOff</span>
+                </div>
+                <div class="stage" data-stage="orbit">
+                    <span class="stage-name">Orbit</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-badge">Ignition Stage | Sustainable Materials</div>
+        <h1 class="hero-title">Apocalypse Journey</h1>
+        <p class="hero-subtitle">Seed Waste → Natural Dye Colours</p>
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-value">Ignition</div>
+                <div class="stat-label">Current Stage</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">0</div>
+                <div class="stat-label">Users Interviewed</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Project-Specific Warning -->
+    <div class="warning-section">
+        <div class="warning-box">
+            <span class="warning-icon">⚠️</span>
+            <div class="warning-text">
+                <strong>Founder Truth:</strong> In deep-tech & materials startups, learning speed beats idea strength.
+            </div>
+        </div>
+    </div>
+
+    <!-- Journey Timeline -->
+    <main class="journey-container">
+        <div class="journey-timeline">
+            <!-- Checkpoint 0 -->
+            <div class="checkpoint" data-checkpoint="0">
+                <div class="checkpoint-marker">
+                    <div class="marker-number">00</div>
+                </div>
+                <div class="checkpoint-card" onclick="toggleCheckpoint(0)">
+                    <div class="card-header">
+                        <div class="card-stage-badge">Ignition</div>
+                        <h3 class="card-title">Team Alignment & Curiosity</h3>
+                        <p class="card-subtitle">Turn "Heat" Into Direction</p>
+                    </div>
+                    <div class="card-objective">
+                        <strong>Objective:</strong> Stop early if alignment fails.
+                    </div>
+                    <div class="card-content" id="checkpoint-0-content">
+                        <p class="content-intro">Agree on <strong>Why This Excites You</strong> and time commitment.</p>
+                    </div>
+                    <button class="card-action">
+                        <span>Align Now</span>
+                        <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Checkpoint 1 -->
+            <div class="checkpoint" data-checkpoint="1">
+                <div class="checkpoint-marker">
+                    <div class="marker-number">01</div>
+                </div>
+                <div class="checkpoint-card" onclick="toggleCheckpoint(1)">
+                    <div class="card-header">
+                        <div class="card-stage-badge">Ignition</div>
+                        <h3 class="card-title">Problem & Market Discovery</h3>
+                        <p class="card-subtitle">Find a Real Buyer Problem</p>
+                    </div>
+                    <div class="card-objective">
+                        <strong>Objective:</strong> Find a real buyer problem.
+                    </div>
+                    <div class="card-content" id="checkpoint-1-content">
+                        <p class="content-intro">Talk to <strong>textile dyers</strong> and handloom clusters.</p>
+                    </div>
+                    <button class="card-action">
+                        <span>Explore Checkpoint</span>
+                        <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Checkpoint 2 -->
+            <div class="checkpoint locked" data-checkpoint="2">
+                <div class="checkpoint-marker">
+                    <div class="marker-number">
+                        <svg class="lock-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M7 11V7C7 4.79086 8.79086 3 11 3H13C15.2091 3 17 4.79086 17 7V11"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="checkpoint-card" onclick="toggleCheckpoint(2)">
+                    <div class="card-header">
+                        <div class="card-stage-badge locked-badge">🔒 Ignition</div>
+                        <h3 class="card-title">Feasibility Exploration</h3>
+                        <p class="card-subtitle">Can Seed Waste Even Work?</p>
+                    </div>
+                    <div class="card-objective">
+                        <strong>Objective:</strong> Prove results are repeatable at small scale.
+                    </div>
+                    <div class="card-content" id="checkpoint-2-content">
+                        <p class="content-intro">Test <strong>2–3 seed waste types</strong> for color output.</p>
+                    </div>
+                    <button class="card-action">
+                        <span>Explore Checkpoint</span>
+                        <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Checkpoint 3 -->
+            <div class="checkpoint locked" data-checkpoint="3">
+                <div class="checkpoint-marker">
+                    <div class="marker-number">
+                        <svg class="lock-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M7 11V7C7 4.79086 8.79086 3 11 3H13C15.2091 3 17 4.79086 17 7V11"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="checkpoint-card" onclick="toggleCheckpoint(3)">
+                    <div class="card-header">
+                        <div class="card-stage-badge locked-badge">🔒 Launchpad</div>
+                        <h3 class="card-title">Value Hypothesis</h3>
+                        <p class="card-subtitle">Match Capability to Demand</p>
+                    </div>
+                    <div class="card-objective">
+                        <strong>Objective:</strong> Match capability to demand.
+                    </div>
+                    <div class="card-content" id="checkpoint-3-content">
+                        <p class="content-intro">Define <strong>1–2 niche customers</strong> (e.g. eco-fashion).</p>
+                    </div>
+                    <button class="card-action">
+                        <span>Explore Checkpoint</span>
+                        <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Checkpoint 4 -->
+            <div class="checkpoint locked" data-checkpoint="4">
+                <div class="checkpoint-marker">
+                    <div class="marker-number">
+                        <svg class="lock-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M7 11V7C7 4.79086 8.79086 3 11 3H13C15.2091 3 17 4.79086 17 7V11"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="checkpoint-card" onclick="toggleCheckpoint(4)">
+                    <div class="card-header">
+                        <div class="card-stage-badge locked-badge">🔒 Testbed</div>
+                        <h3 class="card-title">Prototype & Pilot</h3>
+                        <p class="card-subtitle">Real-World Dyeing Test</p>
+                    </div>
+                    <div class="card-objective">
+                        <strong>Objective:</strong> Prove usage in real setting.
+                    </div>
+                    <div class="card-content" id="checkpoint-4-content">
+                        <p class="content-intro">Partner with <strong>one artisan or brand</strong> for a test.</p>
+                    </div>
+                    <button class="card-action">
+                        <span>Explore Checkpoint</span>
+                        <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Checkpoint 5 -->
+            <div class="checkpoint locked" data-checkpoint="5">
+                <div class="checkpoint-marker">
+                    <div class="marker-number">
+                        <svg class="lock-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M7 11V7C7 4.79086 8.79086 3 11 3H13C15.2091 3 17 4.79086 17 7V11"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="checkpoint-card" onclick="toggleCheckpoint(5)">
+                    <div class="card-header">
+                        <div class="card-stage-badge locked-badge">🔒 LiftOff</div>
+                        <h3 class="card-title">Business & Scale Logic</h3>
+                        <p class="card-subtitle">Decide Scale or Stay Niche</p>
+                    </div>
+                    <div class="card-objective">
+                        <strong>Objective:</strong> Decide scale or stay niche.
+                    </div>
+                    <div class="card-content" id="checkpoint-5-content">
+                        <p class="content-intro">Compare <strong>cost vs synthetic dyes</strong> and decide path.</p>
+                    </div>
+                    <button class="card-action">
+                        <span>Explore Checkpoint</span>
+                        <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Project Rules Section -->
+    <section class="rules-section">
+        <div class="rules-grid">
+            <div class="rule-card stop">
+                <h4>🛑 STOP Doing</h4>
+                <ul>
+                    <li>Branding</li>
+                    <li>Pitch decks</li>
+                    <li>Funding talks</li>
+                    <li>Claims about sustainability impact</li>
+                </ul>
+            </div>
+            <div class="rule-card start">
+                <h4>✅ START Doing</h4>
+                <ul>
+                    <li>Learn fast</li>
+                    <li>Document everything</li>
+                    <li>Talk to users weekly</li>
+                    <li>Accept that killing the idea early is a win</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Password Modal -->
+    <div class="password-modal-overlay" id="passwordModalOverlay"></div>
+    <div class="password-modal" id="passwordModal">
+        <div class="password-modal-content">
+            <h3 class="password-modal-title">🔒 Unlock Checkpoint</h3>
+            <p class="password-modal-subtitle">Enter password to access checkpoint <span
+                    id="unlockCheckpointNumber"></span></p>
+            <input type="password" id="passwordInput" class="password-input" placeholder="Enter password"
+                autocomplete="off" />
+            <div class="password-error" id="passwordError">Incorrect password. Try again.</div>
+            <div class="password-modal-actions">
+                <button class="btn-cancel" onclick="closePasswordModal()">Cancel</button>
+                <button class="btn-unlock" onclick="checkPassword()">Unlock</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Side Drawer -->
+    <div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer()"></div>
+    <div class="drawer" id="drawer">
+        <button class="drawer-close" onclick="closeDrawer()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </button>
+        <div class="drawer-content" id="drawerContent">
+            <!-- Dynamic content will be loaded here -->
+        </div>
+    </div>
+
+    <script src="/journey/apocalypse/script.js"></script>
+</body>
+
+</html>
