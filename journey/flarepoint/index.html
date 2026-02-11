@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flarepoint | Startup Journey</title>
+    <meta name="description" content="Flarepoint startup journey - Plasma arc-assisted electric cooking">
+    <link rel="stylesheet" href="/journey/flarepoint/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-logo">
+                <svg width="45" height="45" viewBox="0 0 100 100" fill="none">
+                    <path d="M20 80L80 20M20 20L35 35M65 65L80 80" stroke="url(#energyGradient)" stroke-width="12"
+                        stroke-linecap="round" />
+                    <path d="M15 85L30 70L25 65L10 80L15 85ZM28 72L50 50L45 45L23 67L28 72Z"
+                        fill="url(#energyGradient)" />
+                    <path d="M45 55L85 15L90 20L50 60L45 55Z" fill="url(#energyGradient)" />
+                    <circle cx="85" cy="15" r="4" fill="white" />
+                    <defs>
+                        <linearGradient id="energyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#ccff00;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#e5ff00;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="pipeline-stages">
+                <div class="stage active" data-stage="ignition">
+                    <span class="stage-name">Ignition</span>
+                </div>
+                <div class="stage" data-stage="launchpad">
+                    <span class="stage-name">Launchpad</span>
+                </div>
+                <div class="stage" data-stage="testbed">
+                    <span class="stage-name">Testbed</span>
+                </div>
+                <div class="stage" data-stage="liftoff">
+                    <span class="stage-name">LiftOff</span>
+                </div>
+                <div class="stage" data-stage="orbit">
+                    <span class="stage-name">Orbit</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-badge">Plasma Tech + B2B Kitchens + Reliability</div>
+        <h1 class="hero-title">Flarepoint</h1>
+        <p class="hero-subtitle">Industrial Plasma-Assisted Electric Cooking</p>
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-value">Ignition</div>
+                <div class="stat-label">Current Stage</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">5/30</div>
+                <div class="stat-label">Assessment Score</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">0</div>
+                <div class="stat-label">Hotels Interviewed</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Project-Specific Warning -->
+    <div class="warning-section">
+        <div class="warning-box">
+            <span class="warning-icon">⚠️</span>
+            <div class="warning-text">
+                <strong>Founder Truth:</strong> Hotels don’t buy innovation. They buy reliability under pressure.
+            </div>
+        </div>
+    </div>
+
+    <!-- Journey Timeline -->
+    <main class="journey-container">
+        <div class="journey-timeline">
+            <!-- Checkpoint 0 -->
+            <div class="checkpoint" data-checkpoint="0">
+                <div class="checkpoint-marker">
+                    <div class="marker-number">00</div>
+                </div>
+                <div class="checkpoint-card" onclick="toggleCheckpoint(0)">
+                    <div class="card-header">
+                        <div class="card-stage-badge">Ignition</div>
+                        <h3 class="card-title">Founder Alignment</h3>
+                        <p class="card-subtitle">Stop Building Fantasies</p>
+                    </div>
+                    <div class="card-objective">
+                        <strong>Objective:</strong> Align on one single problem to test locally.
+                    </div>
+                    <div class="card-content" id="checkpoint-0-content">
+                        <p class="content-intro">Decide on B2B segment <strong>and</strong> kill all 3-year projections
+                            for now.</p>
+                    </div>
+                    <button class="card-action">
+                        <span>Align Now</span>
+                        <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Checkpoint 1 -->
+            <div class="checkpoint" data-checkpoint="1">
+                <div class="checkpoint-marker">
+                    <div class="marker-number">01</div>
+                </div>
+                <div class="checkpoint-card" onclick="toggleCheckpoint(1)">
+                    <div class="card-header">
+                        <div class="card-stage-badge">Ignition</div>
+                        <h3 class="card-title">Problem Discovery</h3>
+                        <p class="card-subtitle">Kitchen Shadowing & Interviews</p>
+                    </div>
+                    <div class="card-objective">
+                        <strong>Objective:</strong> Validate pain before building any hardware.
+                    </div>
+                    <div class="card-content" id="checkpoint-1-content">
+                        <p class="content-intro">Observe chefs <strong>under pressure</strong> — not just talk to them.
+                        </p>
+                    </div>
+                    <button class="card-action">
+                        <span>Explore Checkpoint</span>
+                        <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Checkpoint 2 -->
+            <div class="checkpoint locked" data-checkpoint="2">
+                <div class="checkpoint-marker">
+                    <div class="marker-number">
+                        <svg class="lock-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M7 11V7C7 4.79086 8.79086 3 11 3H13C15.2091 3 17 4.79086 17 7V11"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="checkpoint-card" onclick="toggleCheckpoint(2)">
+                    <div class="card-header">
+                        <div class="card-stage-badge locked-badge">🔒 Launchpad</div>
+                        <h3 class="card-title">Value Hypothesis</h3>
+                        <p class="card-subtitle">Safety vs Cost vs Speed</p>
+                    </div>
+                    <div class="card-objective">
+                        <strong>Objective:</strong> Define exactly why Flare matters to a chef.
+                    </div>
+                    <div class="card-content" id="checkpoint-2-content">
+                        <p class="content-intro">Test value propositions <strong>without</strong> a physical product.
+                        </p>
+                    </div>
+                    <button class="card-action">
+                        <span>Explore Checkpoint</span>
+                        <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Checkpoint 3 -->
+            <div class="checkpoint locked" data-checkpoint="3">
+                <div class="checkpoint-marker">
+                    <div class="marker-number">
+                        <svg class="lock-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M7 11V7C7 4.79086 8.79086 3 11 3H13C15.2091 3 17 4.79086 17 7V11"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="checkpoint-card" onclick="toggleCheckpoint(3)">
+                    <div class="card-header">
+                        <div class="card-stage-badge locked-badge">🔒 Launchpad</div>
+                        <h3 class="card-title">Concept Validation</h3>
+                        <p class="card-subtitle">Fake Prototype Test</p>
+                    </div>
+                    <div class="card-objective">
+                        <strong>Objective:</strong> Test switching willingness with a video demo.
+                    </div>
+                    <div class="card-content" id="checkpoint-3-content">
+                        <p class="content-intro">Get 5 customers to agree to a <strong>pilot test</strong>.</p>
+                    </div>
+                    <button class="card-action">
+                        <span>Explore Checkpoint</span>
+                        <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Checkpoint 4 -->
+            <div class="checkpoint locked" data-checkpoint="4">
+                <div class="checkpoint-marker">
+                    <div class="marker-number">
+                        <svg class="lock-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M7 11V7C7 4.79086 8.79086 3 11 3H13C15.2091 3 17 4.79086 17 7V11"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="checkpoint-card" onclick="toggleCheckpoint(4)">
+                    <div class="card-header">
+                        <div class="card-stage-badge locked-badge">🔒 Testbed</div>
+                        <h3 class="card-title">Prototype & Safety Proof</h3>
+                        <p class="card-subtitle">Don't Kill Trust</p>
+                    </div>
+                    <div class="card-objective">
+                        <strong>Objective:</strong> Install in one cooperative kitchen under peak hours.
+                    </div>
+                    <div class="card-content" id="checkpoint-4-content">
+                        <p class="content-intro">Ensure cooking quality <strong>matches gas</strong> exactly.</p>
+                    </div>
+                    <button class="card-action">
+                        <span>Explore Checkpoint</span>
+                        <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Checkpoint 5 -->
+            <div class="checkpoint locked" data-checkpoint="5">
+                <div class="checkpoint-marker">
+                    <div class="marker-number">
+                        <svg class="lock-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M7 11V7C7 4.79086 8.79086 3 11 3H13C15.2091 3 17 4.79086 17 7V11"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="checkpoint-card" onclick="toggleCheckpoint(5)">
+                    <div class="card-header">
+                        <div class="card-stage-badge locked-badge">🔒 Testbed</div>
+                        <h3 class="card-title">Business Model Reality</h3>
+                        <p class="card-subtitle">Money & Scale</p>
+                    </div>
+                    <div class="card-objective">
+                        <strong>Objective:</strong> Align pricing with industrial reality.
+                    </div>
+                    <div class="card-content" id="checkpoint-5-content">
+                        <p class="content-intro">Test device sale vs <strong>Subscription/Leasing</strong> model.</p>
+                    </div>
+                    <button class="card-action">
+                        <span>Explore Checkpoint</span>
+                        <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Project Rules Section -->
+    <section class="rules-section">
+        <div class="rules-grid">
+            <div class="rule-card stop">
+                <h4>🛑 STOP Doing</h4>
+                <ul>
+                    <li>Long-term financial projections</li>
+                    <li>Large machinery planning</li>
+                    <li>SDG-heavy storytelling</li>
+                    <li>Assuming safety alone sells</li>
+                </ul>
+            </div>
+            <div class="rule-card start">
+                <h4>✅ START Doing</h4>
+                <ul>
+                    <li>Kitchen visits & Chef shadowing</li>
+                    <li>Listening more than pitching</li>
+                    <li>Testing assumptions weekly</li>
+                    <li>Analyzing switching psychology</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Password Modal -->
+    <div class="password-modal-overlay" id="passwordModalOverlay"></div>
+    <div class="password-modal" id="passwordModal">
+        <div class="password-modal-content">
+            <h3 class="password-modal-title">🔒 Unlock Checkpoint</h3>
+            <p class="password-modal-subtitle">Enter password to access checkpoint <span
+                    id="unlockCheckpointNumber"></span></p>
+            <input type="password" id="passwordInput" class="password-input" placeholder="Enter password"
+                autocomplete="off" />
+            <div class="password-error" id="passwordError">Incorrect password. Try again.</div>
+            <div class="password-modal-actions">
+                <button class="btn-cancel" onclick="closePasswordModal()">Cancel</button>
+                <button class="btn-unlock" onclick="checkPassword()">Unlock</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Side Drawer -->
+    <div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer()"></div>
+    <div class="drawer" id="drawer">
+        <button class="drawer-close" onclick="closeDrawer()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </button>
+        <div class="drawer-content" id="drawerContent">
+            <!-- Dynamic content will be loaded here -->
+        </div>
+    </div>
+
+    <script src="/journey/flarepoint/script.js"></script>
+</body>
+
+</html>
